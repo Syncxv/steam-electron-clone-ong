@@ -33,7 +33,7 @@ const NavBar: React.FC<Props> = () => {
                 <NavLink selected={history.length > 1} onClick={() => history.forward()}>
                     <ArrowRight />
                 </NavLink>
-                <NavLink selected={router.pathname === "/library"} onClick={() => router.push("/library")}>
+                <NavLink selected={router.pathname.startsWith("/library")} onClick={() => router.push("/library")}>
                     Library
                 </NavLink>
             </nav>
