@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import Sidebar from "../components/Sidebar";
+import Layout from "../../components/Layout";
+import Sidebar from "../../components/Sidebar";
 
 interface Props {}
 
