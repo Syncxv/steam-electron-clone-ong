@@ -13,7 +13,7 @@ const NavLink: React.FC<NavLinkProps> = ({ children, selected, onClick }) => {
                 e.preventDefault();
                 onClick();
             }}
-            className={`cursor-pointer ${selected ? "text-gray-100" : ""} hover:text-gray-200`}
+            className={`cursor-pointer select-none ${selected ? "text-gray-100" : ""} hover:text-gray-200`}
         >
             {children}
         </a>
