@@ -3,13 +3,15 @@ import { Minus, Plus } from "phosphor-react";
 import { useState } from "react";
 
 interface GameItemProps {
+    id: string;
     name: string;
     image?: string;
 }
 
-const GameItem: React.FC<GameItemProps> = ({ name, image }) => {
+const GameItem: React.FC<GameItemProps> = ({ id, name, image }) => {
+    const router = useRouter();
     return (
-        <li className="flex gap-2 px-6 text-gray-400 cursor-pointer hover:bg-steam-blue-300">
+        <li onClick={() => router.push(`/library/game/${id}`)} className="flex gap-2 px-6 text-gray-400 cursor-pointer hover:bg-steam-blue-300">
             <div className={`image h-5 w-5 ${image ? "" : "bg-gray-100"}`}>{image && <img src={image} alt="" className="h-full w-full" />}</div>
             <span>{name}</span>
         </li>
@@ -48,20 +50,20 @@ const SideList: React.FC<Props> = () => {
         <>
             <Catagory title="catagory">
                 <ul>
-                    <GameItem name="WOAH" />
-                    <GameItem name="WOAH" />
-                    <GameItem name="WOAH" />
-                    <GameItem name="WOAH" />
-                    <GameItem name="WOAH" />
+                    <GameItem id="wuwuwu" name="WOAH" />
+                    <GameItem id="wuwuwu" name="WOAH" />
+                    <GameItem id="wuwuwu" name="WOAH" />
+                    <GameItem id="wuwuwu" name="WOAH" />
+                    <GameItem id="wuwuwu" name="WOAH" />
                 </ul>
             </Catagory>
             <Catagory title="catagory2">
                 <ul>
-                    <GameItem name="hey there kind sir" />
-                    <GameItem name="hey there kind sir" />
-                    <GameItem name="hey there kind sir" />
-                    <GameItem name="hey there kind sir" />
-                    <GameItem name="hey there kind sir" />
+                    <GameItem id="bruh momement" name="hey there kind sir" />
+                    <GameItem id="bruh momement" name="hey there kind sir" />
+                    <GameItem id="bruh momement" name="hey there kind sir" />
+                    <GameItem id="bruh momement" name="hey there kind sir" />
+                    <GameItem id="bruh momement" name="hey there kind sir" />
                 </ul>
             </Catagory>
         </>
