@@ -7,6 +7,8 @@ module.exports = {
             },
             colors: {
                 "steam-700": "#202125",
+                "steam-600": "#25272d",
+                "steam-500": "#3e4047",
             },
             spacing: {
                 0.1: "1px",
