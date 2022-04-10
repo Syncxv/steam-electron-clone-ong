@@ -8,6 +8,7 @@ const Sidebar: React.FC<Props> = () => {
         <>
             <aside className="flex-none w-2/5 bg-steam-600 text-gray-400">
                 <SideHead />
+                <SideList />
             </aside>
         </>
     );

@@ -9,6 +9,8 @@ module.exports = {
                 "steam-700": "#202125",
                 "steam-600": "#25272d",
                 "steam-500": "#3e4047",
+                "steam-blue-300": "#3e4e69",
+                "steam-blue-500": "#292f3b",
             },
             spacing: {
                 0.1: "1px",
