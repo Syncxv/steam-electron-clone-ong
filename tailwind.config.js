@@ -8,6 +8,7 @@ module.exports = {
             colors: {
                 "steam-700": "#202125",
                 "steam-600": "#25272d",
+                "steam-550": "#2a2e33",
                 "steam-500": "#3e4047",
                 "steam-blue-300": "#3e4e69",
                 "steam-blue-500": "#292f3b",
